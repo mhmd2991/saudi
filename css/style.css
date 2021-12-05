@@ -11,8 +11,6 @@
     /*border: 1px solid red;*/
 }
 
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -209,6 +207,7 @@ main .container .head {
     display: flex;
     margin: auto;
     margin-bottom: 30px;
+    max-width: 100%;
 }
 
 .container .content .part:not(:last-child) {
@@ -321,5 +320,31 @@ main .container .head {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@media(max-width: 500px) {
+    .container .content section {
+        width: 95%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container .head .nav li .inner {
+        font-size: 12px;
+    }
+
+    .container .head .nav li::after {
+        margin-top: 50px;
+    }
+
+    .container .head .line {
+        top: 62px;
+    }
+
+    .container .head .nav li {
+        height: 72px;
     }
 }
